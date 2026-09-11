@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .track{
+            overflow: hidden;
+            background-color: aqua;
+        }
+        .content{
+            animation: move 8s linear infinite;
+            display: flex;
+            width: max-content;
+           
+        }
+        .track:hover{
+            animation-play-state: paused;
+        }
+         p{
+                white-space:nowrap;
+                padding: 10px;
+            }
+        @keyframes move{
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-50%);
+            }
+
+        }
+        .group{
+            display: flex;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="track">
+        <div class="content">
+            <div class="group">
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p><p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p><p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            </div>
+             <div class="group">
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            </div>
+
+          
+
+        </div>
+    </div>
+</body>
+</html>
